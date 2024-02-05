@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <h1>Programming Languages</h1>
+  <p>
+    This site provides a brief overview of serveral popular programming languages.
+    Each page includes a quick summary of the language's history as well as a few examples
+    of how it is used today. Click on a language to learn more about it.
+  </p>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-4">{% include "pythonCard.html" %}</div>
+      <div class="col-4">{% include "fsharpCard.html" %}</div>
+      <div class="col-4">{% include "racketCard.html" %}</div>
+    </div>
+  </div>
+
+{% endblock content %}

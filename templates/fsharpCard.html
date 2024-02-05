@@ -1,0 +1,16 @@
+{% extends "card.html" %}
+{% load static %}
+
+{% block img-link %}
+{% static 'f-sharp-logo.png' %}
+{% endblock img-link %}
+
+{% block language %}F#{% endblock language %}
+
+{% block description %}
+F# is a functional-first language from the ML family that runs on the .NET framework.
+{% endblock description %}
+
+{% block language-link %}
+{% url 'fsharp' %}
+{% endblock language-link %}

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title></title>
+  </head>
+  <body>
+    <div class="card">
+      <img src="{% block img-link %}{% endblock img-link %}">
+      <div class="card-body">
+        <p class="card-title display-6 text-primary">{% block language %}{% endblock language%}</p>
+        <p class="card-text">{% block description %}{% endblock description %}</p>
+        <a href="{% block language-link %}{% endblock language-link %}" class="btn btn-primary">Mor Info</a>
+      </div>
+    </div>
+  </body>
+</html>

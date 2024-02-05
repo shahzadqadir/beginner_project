@@ -1,0 +1,16 @@
+{% extends "card.html" %}
+{% load static %}
+
+{% block img-link %}
+{% static 'python-logo.png' %}
+{% endblock img-link %}
+
+{% block language %}Python{% endblock language %}
+
+{% block description %}
+Python is general purpose programming language which emphasizes readability.
+{% endblock description %}
+
+{% block language-link %}
+{% url 'python' %}
+{% endblock language-link %}
